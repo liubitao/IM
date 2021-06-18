@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package im;
+
+
+// code=1003 登陆请求
+message XHImLoginRequest {
+    string userId = 1;   //用户id
+    string userSign = 2;  //用户签名
+}
+
+// code=1004 登陆返回
+message XHImLoginResponse {
+    string userId = 1;  //用户id
+    int32 status = 2;  //返回结果 1=成功 2=失败
+}
+
+
